@@ -13,5 +13,8 @@
   "dependencies": {
     "nuxt": "^2.0.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@nuxt/typescript-build": "^0.3.2",
+    "nuxt-typed-vuex": "^0.1.8"
+  }
 }
