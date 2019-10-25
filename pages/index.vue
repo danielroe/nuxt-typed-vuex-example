@@ -8,16 +8,18 @@
       <h2 class="subtitle">
         Example project for nuxt-typed-vuex.
       </h2>
+      <div class="row">Email: {{ email }}</div>
+      <div class="row"><button @click="setEmail">Set email</button></div>
       <div class="links">
         <a
-          href="https://nuxtjs.org/"
+          href="https://nuxt-typed-vuex.danielcroe.com/"
           target="_blank"
           class="button--green"
         >
           Documentation
         </a>
         <a
-          href="https://github.com/nuxt/nuxt.js"
+          href="https://github.com/danielroe/nuxt-typed-vuex"
           target="_blank"
           class="button--grey"
         >
@@ -29,11 +31,21 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import { Vue, Component } from "nuxt-property-decorator";
+import Logo from "~/components/Logo.vue";
 
-export default {
+@Component({
   components: {
     Logo
+  }
+})
+export default class HomePage extends Vue {
+  get email() {
+    return this.$accessor.email;
+  }
+
+  setEmail() {
+    this.$accessor.setEmail("test@email.com");
   }
 }
 </script>
@@ -49,8 +61,8 @@ export default {
 }
 
 .title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   display: block;
   font-weight: 300;
   font-size: 100px;
