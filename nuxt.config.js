@@ -43,6 +43,11 @@ export default {
   */
   build: {
     /*
+    ** Transpile module (and plugin).
+    */
+    transpile: [/nuxt-typed-vuex/],
+
+    /*
     ** You can extend webpack config here
     */
     extend (config, ctx) {
