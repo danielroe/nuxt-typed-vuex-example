@@ -4,6 +4,7 @@ import {
   mutationTree,
   actionTree,
 } from 'nuxt-typed-vuex'
+import { Context } from '@nuxt/types'
 
 import * as submodule from './submodule'
 
@@ -33,6 +34,10 @@ export const actions = actionTree(
   {
     async resetEmail({ commit }) {
       commit('setEmail', 'a@a.com')
+    },
+
+    async nuxtServerInit(_vuexContext, nuxtContext: Context) {
+      console.log(nuxtContext.req)
     },
   }
 )
