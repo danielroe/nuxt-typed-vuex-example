@@ -45,7 +45,7 @@ export default {
     /*
     ** Transpile module (and plugin).
     */
-    transpile: [/nuxt-typed-vuex/],
+    transpile: [/typed-vuex/],
 
     /*
     ** You can extend webpack config here
