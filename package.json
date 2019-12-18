@@ -11,11 +11,11 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.11.0"
   },
   "devDependencies": {
     "@nuxt/typescript-build": "^0.5.1",
-    "nuxt-property-decorator": "^2.5.0",
-    "nuxt-typed-vuex": "^0.1.15"
+    "nuxt-typed-vuex": "^0.1.15",
+    "vue-property-decorator": "^8.3.0"
   }
 }

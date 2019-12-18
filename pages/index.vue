@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import { Vue, Component } from "nuxt-property-decorator";
+import { Vue, Component } from "vue-property-decorator";
 import Logo from "~/components/Logo.vue";
 
 @Component({
