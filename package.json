@@ -17,6 +17,6 @@
   "devDependencies": {
     "@nuxt/typescript-build": "0.6.0",
     "nuxt-typed-vuex": "0.1.17",
-    "vue-property-decorator": "8.4.0"
+    "vue-property-decorator": "8.4.1"
   }
 }
